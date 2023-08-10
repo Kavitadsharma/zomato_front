@@ -1,7 +1,7 @@
 {% extends 'zomato_app/base.html' %}
 
 {% block content %}
-<h2>Menu Management</h2>
+<h2>Management</h2>
 <ul>
     {% for dish in dishes %}
         <li>{{ dish.dish_name }} - ${{ dish.price }} - {% if dish.availability %}Available{% else %}Not Available{% endif %}
