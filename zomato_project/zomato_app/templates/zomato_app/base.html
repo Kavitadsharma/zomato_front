@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zesty Zomato</title>
+</head>
+<body>
+    <header>
+        <h1>Zesty Zomato</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'menu_management' %}">Menu Management</a></li>
+                <li><a href="{% url 'order_status' %}">Order Status</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; {{ year }} Zesty Zomato. All rights reserved.</p>
+    </footer>
+</body>
+</html>
