@@ -6,7 +6,7 @@
     {% for dish in dishes %}
         <li>{{ dish.dish_name }} - ${{ dish.price }} - {% if dish.availability %}Available{% else %}Not Available{% endif %}
             <a href="{% url 'remove_dish' dish.id %}">Remove</a>
-            <a href="{% url 'toggle_availability' dish.id %}">Toggle Availability</a></li>
+            <a href="{% url 'toggle_availability' dish.id %}"> Availability</a></li>
     {% endfor %}
 </ul>
 
